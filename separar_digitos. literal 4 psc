@@ -1,0 +1,16 @@
+Algoritmo separar_digitos
+    Definir numero, unidades, decenas, centenas, unidadesMil Como Entero
+	
+    Escribir "Ingrese un número de 4 dígitos:"
+    Leer numero
+	
+    unidades = numero MOD 10
+    decenas = Trunc((numero MOD 100) / 10)
+    centenas = Trunc((numero MOD 1000) / 100)
+    unidadesMil = Trunc(numero / 1000)
+	
+    Escribir "Unidades: ", unidades
+    Escribir "Decenas: ", decenas
+    Escribir "Centenas: ", centenas
+    Escribir "Unidades de mil: ", unidadesMil
+FinAlgoritmo
